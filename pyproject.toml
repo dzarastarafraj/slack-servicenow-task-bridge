@@ -1,0 +1,13 @@
+[project]
+name = "slack-servicenow-task-bridge"
+version = "0.1.0"
+description = "Internal Slack to ServiceNow Task bridge (inactive development scaffold)"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "requests>=2.32,<3",
+  "slack-sdk>=3.30,<4"
+]
+
+[tool.vercel]
+entrypoint = "app:app"
